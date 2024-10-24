@@ -1,4 +1,5 @@
 /* ESTILO GERAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -47,7 +48,38 @@ form .btn-enviar input:hover {
     transform: scale(1.05);
 }
 
+/* ESTILO DO DESENVOLVEDOR FULL-STACK & LEONARDO CASSIANO (SOBRE)  */
+
+.cursor {
+    display: inline-block;
+    background-color: transparent;
+    margin-left: 2px;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* ******* ESTILO LEONARDO CASIANO *********/
+
+.cursor {
+    display: inline-block;
+    background-color: transparent;
+    margin-left: 2px;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
 /* ESTILO DO CABEÇALHO */
+
 header {
     padding: 40px 4%;
 }
@@ -266,6 +298,7 @@ section.sobre .flex {
 }
 
 /* ESTILO DO PORTFÓLIO */
+
 section.portfolio {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
@@ -361,88 +394,100 @@ form .btn-enviar input {
 }
 
 .formulario {
-    max-width: 600px; 
-    margin: 0 auto; 
-    padding: 20px; 
-    border: 1px solid #303030; 
-    border-radius: 8px; 
-    background-color: #000000; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #303030;
+    border-radius: 8px;
+    background-color: #000000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .titulo {
-    text-align: center; 
-    font-size: 28px; 
-    color: #333; 
-    margin-bottom: 20px; 
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%; 
-    padding: 12px; 
-    margin: 10px 0; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    transition: border-color 0.3s ease; 
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border-color: #d62976; /* Cor da borda ao focar */
-    outline: none; 
+    border-color: #d62976;
+    /* Cor da borda ao focar */
+    outline: none;
 }
 
 textarea {
-    height: 100px; 
-    resize: vertical; 
+    height: 100px;
+    resize: vertical;
 }
 
 .btn-enviar {
-    text-align: center; 
-    margin-top: 20px; 
+    text-align: center;
+    margin-top: 20px;
 }
 
 .btn-enviar input[type="submit"] {
-    background-color: #d62976; 
-    color: white; 
-    border: none; 
-    padding: 12px 20px; 
-    border-radius: 4px; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
+    background-color: #d62976;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .btn-enviar input[type="submit"]:hover {
-    background-color: #c52066; 
+    background-color: #c52066;
 }
 
 #loading,
 #success-message {
-    margin-top: 10px; 
-    text-align: center; 
-    font-size: 16px; 
-    color: #333; 
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
 }
 
 /* LOADING*/
 
 .loader {
-    border: 8px solid #f3f3f3; /* Cor do fundo */
-    border-top: 8px solid #3498db; /* Cor da parte giratória */
+    border: 8px solid #f3f3f3;
+    /* Cor do fundo */
+    border-top: 8px solid #3498db;
+    /* Cor da parte giratória */
     border-radius: 50%;
-    width: 40px; /* Tamanho do loader */
-    height: 40px; /* Tamanho do loader */
-    animation: spin 1s linear infinite; /* Animação de rotação */
-    margin: 0 auto; /* Centraliza o loader */
+    width: 40px;
+    /* Tamanho do loader */
+    height: 40px;
+    /* Tamanho do loader */
+    animation: spin 1s linear infinite;
+    /* Animação de rotação */
+    margin: 0 auto;
+    /* Centraliza o loader */
 }
 
 /* Animação de rotação */
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -569,93 +614,100 @@ footer .line-footer p a {
 /* ------------- E-mail centralizado ----------- */
 
 .interface {
-    text-align: center; 
+    text-align: center;
 }
 
 .line-footer {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
 }
 
 .email-text {
-    margin: 10px 0; 
+    margin: 10px 0;
 }
 
 .btn-social {
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
-    /* SOBRE MIM */
+/* SOBRE MIM */
 
 .btn-social button {
-    background-color: rgb(214, 214, 214); 
-    border: 2px solid transparent; 
-    border-radius: 5px; 
+    background-color: rgb(214, 214, 214);
+    border: 2px solid transparent;
+    border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s ease; 
-    padding: 10px; 
-    position: relative; 
+    transition: all 0.3s ease;
+    padding: 10px;
+    position: relative;
 }
 
 .btn-social button i {
-    color: black; /* Cor padrão dos ícones */
-    transition: color 0.3s ease; 
+    color: black;
+    /* Cor padrão dos ícones */
+    transition: color 0.3s ease;
 }
 
 .btn-social button:hover {
-    border-color: transparent; 
+    border-color: transparent;
 }
 
 .btn-social button:hover i {
-    color: currentColor; /* Muda a cor do ícone para a cor atual do botão */
+    color: currentColor;
+    /* Muda a cor do ícone para a cor atual do botão */
 }
 
 .btn-social a:nth-child(1) button:hover i {
-    color: #C13584; /* Cor do Instagram */
+    color: #C13584;
+    /* Cor do Instagram */
 }
 
 .btn-social a:nth-child(2) button:hover i {
-    color: #FF0000; /* Cor do YouTube */
+    color: #FF0000;
+    /* Cor do YouTube */
 }
 
 .btn-social a:nth-child(3) button:hover i {
-    color: #0A66C2; /* Cor do LinkedIn */
+    color: #0A66C2;
+    /* Cor do LinkedIn */
 }
 
 .btn-social a:nth-child(4) button:hover i {
-    color: #333; /* Cor do GitHub */
+    color: #333;
+    /* Cor do GitHub */
 }
 
 .btn-social a:nth-child(5) button:hover i {
-    color: #031881; /* Cor do link externO*/
+    color: #031881;
+    /* Cor do link externO*/
 }
 
-    /* lOGO  Superior / Inferior */
+/* lOGO  Superior / Inferior */
 
 .logo {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #000000; 
-    border-radius: 10px; 
-    box-shadow: 0px 2px 10px rgba(24, 165, 121, 0.1); 
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(24, 165, 121, 0.1);
 }
 
 .logo-text {
-    font-family: 'Dancing Script', cursive; 
-    font-size: 36px; 
-    color: #333; 
-    text-decoration: none; 
-    transition: color 0.3s ease; 
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    color: #fff9f9;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .logo-text:hover {
-    color: #055e61; 
+    color: #ebc830;
 }
 
-    /* SETA PARA TOPO DA PÁGINA */
+/* SETA PARA TOPO DA PÁGINA */
 
 .scroll-to-top {
     position: fixed;
@@ -663,36 +715,207 @@ footer .line-footer p a {
     right: 20px;
     font-size: 40px;
     color: #ffecec;
-    display: none; 
+    display: none;
     z-index: 100;
     cursor: pointer;
 }
 
 .scroll-to-top:hover {
-    color: #05717b; /* Cor ao passar o mouse */
+    color: #05717b;
+    /* Cor ao passar o mouse */
 }
 
 
-/* ==================================== RESPONSIVO - MOBILE ====================================================================================
-======================================= MENU - HAMBURGUER   ===================================================================================*/
+/*  IMAGENS DO NOTEBOOK E LINGUAGEM*/
 
+.img-topo-site {
+    position: relative;
+    width: auto;
+}
+
+.notebook-img {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.img-topo-site {
+    position: relative;
+    width: auto;/
+}
+
+.notebook-img {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.vidro-img {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ICONE DO DESENVOLVIMENTO FULL - STACK */
+
+p {
+    line-height: 1.6;
+}
+
+strong {
+    color: #ebe72a;
+}
+
+span {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+p i {
+    color: #09ccfd;
+    /* Cor dos ícones */
+    margin-right: 5px;
+}
+
+
+.menu-desktop {
+    display: block;
+}
+
+.menu-desktop ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-desktop li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.menu-desktop a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.menu-desktop a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #ffec82fb;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.menu-desktop a:hover::after {
+    transform: scaleX(1);
+}
+
+/* SOBRE - MEU CARD- FLUTUANTE */
+
+.img-sobre {
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(144, 238, 144, 0.6);
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Efeito flutuante */
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.img-sobre img {
+    display: block;
+    width: 395px;
+    height: 481px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* ==================================== RESPONSIVO - MOBILE ==================================================================================== */
+/* ======================================= MENU - HAMBURGUER ================================================================================== */
+
+/* Estilos gerais para dispositivos móveis (até 768px) */
 
 @media (max-width: 768px) {
     .menu-desktop {
         display: none;
     }
+
     .btn-contato {
         display: none;
     }
+
     .btn-abrir-menu {
         display: block;
         font-size: 40px;
-        color: #fff; /* cor do ícone */
+        color: #fff;
         cursor: pointer;
         z-index: 1001;
     }
+
+    .menu-mobile {
+        width: 70%;
+    }
 }
 
+/* Estilos específicos para tablets (768px a 1024px) */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .btn-abrir-menu {
+        font-size: 35px;
+    }
+
+    .menu-mobile nav ul li a {
+        font-size: 20px;
+    }
+}
+
+/* Estilos específicos para smartphones pequenos (iPhone 5/SE) */
+
+@media (max-width: 320px) {
+    .btn-abrir-menu {
+        font-size: 30px;
+    }
+
+    .menu-mobile nav ul li a {
+        font-size: 16px;
+    }
+}
+
+/* Estilos específicos para smartphones grandes (ex: Galaxy S10, iPhone 11) */
+
+@media (min-width: 321px) and (max-width: 480px) {
+    .btn-abrir-menu {
+        font-size: 35px;
+    }
+
+    .menu-mobile nav ul li a {
+        font-size: 18px;
+    }
+}
+
+/* Menu mobile */
 
 .menu-mobile {
     background-color: #000;
@@ -705,6 +928,8 @@ footer .line-footer p a {
     overflow: hidden;
     transition: width 0.5s ease;
 }
+
+/* Estilização da lista de navegação */
 
 .menu-mobile nav ul {
     padding: 60px 20px;
@@ -723,10 +948,6 @@ footer .line-footer p a {
     display: block;
 }
 
-.menu-mobile.abrir-menu {
-    width: 70%;
-}
-
 /* Botão para fechar o menu */
 
 .btn-fechar {
@@ -741,7 +962,7 @@ footer .line-footer p a {
     font-size: 30px;
 }
 
-/* Overlay */
+/* Overlay para escurecer o fundo */
 
 .overlay-menu {
     background-color: rgba(0, 0, 0, 0.7);
@@ -754,6 +975,8 @@ footer .line-footer p a {
     z-index: 999;
 }
 
-.menu-mobile.abrir-menu ~ .overlay-menu {
-    display: block;
+/* Exibe a sobreposição quando o menu está aberto */
+
+.menu-mobile.abrir-menu~.overlay-menu {
+    display: block;/
 }

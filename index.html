@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/logo-leo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="js/menu.js" defer></script>
-    <script src="js/script.js"defer></script>
+    <script src="js/script.js" defer></script>
     <title>Leonardo Cassiano</title>
 </head>
 
@@ -23,7 +25,7 @@
             <!-- =========================== lOGO NO SUPERIOR ====================================== -->
 
             <div class="logo">
-                <a href="#inicio" class="logo-text">LS - Leonardo Santos</a>
+                <a href="#inicio" class="logo-text"><i class="fas fa-laptop-code"></i> Leonardo Cassiano</a>
             </div>
             
             <nav class="menu-desktop">
@@ -69,16 +71,39 @@
     </header>
 
     <main>
-
         <!-- ============================ RESUMO SOBRE MIM / HABILIDADES  ================================================== -->
 
         <section class="topo-do-site">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
-                        <h1>Olá, sou Leonardo Cassiano<span>.</span></h1>
-                        <p>Sou estudante de Análise e Desenvolvimento de Sistemas, onde desenvolvo habilidades em programação e design para criar soluções inovadoras e funcionais. Minha formação me proporciona uma base sólida em HTML, CSS, JavaScript, PHP, MySQL, C#, JAVA e várias linguagens de programação, além de conhecimentos em ferramentas como Figma e Git. Estou comprometido em alavancar a experiência do usuário, otimizando a funcionalidade e o design, sempre visando resultados eficazes. Combinando criatividade e técnica, estou preparado(a) para transformar ideias em realidades digitais impactantes.</p>
+                        <h1><span id="nome"></span><span class="cursor">|</span></h1>
 
+                        <p>
+                            Sou estudante de Análise e Desenvolvimento de Sistemas, onde desenvolvo habilidades em
+                            programação e design para criar soluções inovadoras e funcionais. Minha formação me
+                            proporciona uma base sólida em
+                            <strong><i class="fas fa-code"></i> Linguagens de Programação:</strong>
+                            <span>HTML, CSS, JavaScript, jQuery, C, C++, C#, Java, PHP</span>.
+
+                            <strong><i class="fas fa-database"></i> Bancos de Dados:</strong>
+                            <span>MySQL</span>.
+
+                            <strong><i class="fas fa-paint-brush"></i> Design:</strong>
+                            <span>Figma</span>.
+
+                            <strong><i class="fas fa-tools"></i> Ferramentas:</strong>
+                            <span>Bootstrap, Sass, Visual Studio Code, Replit, Git, GitHub, Windows, Linux</span>.
+                            <!-- Fechei a tag span aqui -->
+
+                            <strong><i class="fas fa-book"></i> Estudos Adicionais:</strong>
+                            <span>Angular, AWS, Inteligência Artificial (AI), Node.js, Python, React, Tailwind,
+                                Spring</span>.
+
+                            Estou comprometido em alavancar a experiência do usuário, otimizando a funcionalidade e
+                            o design, sempre visando resultados eficazes. Combinando criatividade e técnica, estou
+                            preparado para transformar ideias em realidades digitais impactantes.
+                        </p>
                         <div class="btn-contato">
                             <a href="#contato">
                                 <button>Entre em contato</button>
@@ -87,8 +112,11 @@
                     </div>
 
                     <div class="img-topo-site">
-                        <img src="images/Leo.jpeg" alt="Leonardo Cassiano">
-                    </div><
+                        <img src="images/notebook-2.png" alt="Notebook" class="notebook-img">
+                        <img src="images/vidro.png" alt="Vidro Quebrado" class="vidro-img"
+                            style="width: 100%; margin-left: -25%; margin-top: -60%;">
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -102,52 +130,80 @@
                     <div class="especialidades-box">
                         <i class="bi bi-code-square"></i>
                         <h3>Desenvolvimento de Websites</h3>
-                        <p>Criação de websites responsivos e dinâmicos, utilizando HTML, CSS e JavaScript. Meu foco é garantir que cada site não apenas tenha um design atraente, mas também funcione perfeitamente em todos os dispositivos.</p>
+                        <p>Criação de websites responsivos e dinâmicos, utilizando HTML, CSS e JavaScript. Meu foco é
+                            garantir que cada site não apenas tenha um design atraente, mas também funcione
+                            perfeitamente em todos os dispositivos.</p>
                     </div>
-        
+
                     <div class="especialidades-box">
-                        <i class="bi bi-tools"></i> 
+                        <i class="bi bi-tools"></i>
                         <h3>Desenvolvimento Backend</h3>
-                        <p>Atuo na construção de APIs e gerenciamento de bancos de dados. Utilizo tecnologias como PHP, MySQL e Java para garantir que as aplicações sejam escaláveis e seguras.</p>
+                        <p>Atuo na construção de APIs e gerenciamento de bancos de dados. Utilizo tecnologias como PHP,
+                            MySQL e Java para garantir que as aplicações sejam escaláveis e seguras.</p>
                     </div>
-        
+
                     <div class="especialidades-box">
-                        <i class="bi bi-laptop"></i> 
+                        <i class="bi bi-laptop"></i>
                         <h3>Aplicações Web</h3>
-                        <p>Desenvolvo aplicações web completas, integrando frontend e backend. Com habilidades em JavaScript, HTML, CSS, e frameworks como Bootstrap e Sass, crio soluções eficazes e de fácil manutenção.</p>
+                        <p>Desenvolvo aplicações web completas, integrando frontend e backend. Com habilidades em
+                            JavaScript, HTML, CSS, e frameworks como Bootstrap e Sass, crio soluções eficazes e de fácil
+                            manutenção.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-            <!-- ============================ RESUMO SOBRE MIM / HABILIDADES  ================================================== -->
+        <!-- ============================ RESUMO SOBRE MIM / HABILIDADES  ================================================== -->
 
         <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
-                        <img src="images/LEO-4.jpeg" alt="">
+                        <img src="images/LEO-4.jpeg" alt="Leonardo Cassiano">
                     </div>
 
                     <div class="txt-sobre">
-                        <h2>MUITO PRAZER, <span>SOU LEONARDO CASSIANO.</span></h2>
-                        <p>Sou estudante do curso de Análise e Desenvolvimento de Sistemas e tenho 25 anos. Meu maior sonho é me tornar um grande programador Full Stack, atuando tanto no Front-end quanto no Back-end. A experiência que tenho entre essas duas áreas me encantou, e estou animado para continuar aprendendo e crescendo profissionalmente.</p>
-                        <p>Sou de São Paulo e adoro a vibrante comunidade de tecnologia que existe aqui. Estou sempre em busca de novos desafios e oportunidades que me permitam desenvolver minhas habilidades e contribuir para projetos inovadores.</p>
+                        <h2>MUITO PRAZER, SOU <span id="nome2"></span><span class="cursor">|</span></h2>
+                        <p>
+                            <i class="fas fa-user-graduate"></i> Sou estudante do curso de Análise e Desenvolvimento de
+                            Sistemas 4/5 e tenho 25 anos. Meu maior sonho é me tornar um grande programador Full Stack,
+                            atuando tanto no Front-end quanto no Back-end. A experiência que tenho entre essas duas
+                            áreas me encantou, e estou animado para continuar aprendendo e crescendo profissionalmente.
+                        </p>
+
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i> Sou de São Paulo e adoro a vibrante comunidade de
+                            tecnologia que existe aqui. Estou sempre em busca de novos desafios e oportunidades que me
+                            permitam desenvolver minhas habilidades e contribuir para projetos inovadores.
+                        </p>
+
+                        <p>
+                            <i class="fas fa-heart"></i> Meus hobbies incluem <strong>jogar tênis</strong> <i
+                                class="fas fa-table-tennis"></i>, meu esporte de paixão, <strong>jogar vídeo
+                                game</strong> <i class="fas fa-gamepad"></i>, e <strong>praticar programação</strong> <i
+                                class="fas fa-code"></i>. Atualmente, também estou em busca de estágio na área de
+                            tecnologia para aprender mais e me destacar.
+                        </p>
 
                         <div class="btn-social">
-                            <a href="https://www.instagram.com/p1csleo99/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="https://www.youtube.com/@Leonardo_Dev" target="_blank"><button><i class="bi bi-youtube"></i></button></a>
-                            <a href="https://www.linkedin.com/in/leonardo-cassiano-435b62257/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="https://github.com/yLeonardo99" target="_blank"><button><i class="bi bi-github"></i></button></a> <!-- Ícone do GitHub -->
-                            <a href="https://bio.site/Leonardo.Dev" target="_blank"><button><i class="bi bi-link-45deg"></i></button></a> <!-- Ícone para link externo -->
+                            <a href="https://www.instagram.com/p1csleo99/" target="_blank"><button><i
+                                        class="bi bi-instagram"></i></button></a>
+                            <a href="https://www.youtube.com/@Leonardo_Dev" target="_blank"><button><i
+                                        class="bi bi-youtube"></i></button></a>
+                            <a href="https://www.linkedin.com/in/leonardo-cassiano-435b62257/"
+                                target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/yLeonardo99" target="_blank"><button><i
+                                        class="bi bi-github"></i></button></a> 
+                            <a href="https://bio.site/Leonardo.Dev" target="_blank"><button><i
+                                        class="bi bi-link-45deg"></i></button></a> <!-- Ícone para link externo -->
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
 
-            <!-- ============================================ PROJETOS =================================== -->
+        <!-- ============================================ PROJETOS =================================== -->
 
         <section class="portfolio" id="projetos">
             <div class="interface">
@@ -165,55 +221,62 @@
                 </div>
             </div>
         </section>
-            
+
         <!-- ========================================== ENTRE EM CONTATO ================================================ -->
 
         <section class="formulario" id="contato">
             <div class="interface">
                 <h2 class="titulo">FALA <span>COMIGO.</span></h2>
-        
-                <form id="contact-form" action="https://formspree.io/f/xyzyzngr" method="POST"> <!-- Eu estou utilizando o (Formpree)-->
+
+                <form id="contact-form" action="https://formspree.io/f/xyzyzngr" method="POST">
+                    <!-- Eu estou utilizando o (Formpree)-->
                     <input type="text" name="name" id="name" placeholder="Seu nome completo:" required>
                     <input type="email" name="email" id="email" placeholder="Seu e-mail:" required>
                     <input type="text" name="phone" id="phone" placeholder="Seu celular: (DD) 00000-0000" required>
                     <textarea name="message" id="message" placeholder="Sua mensagem" required></textarea>
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
                 </form>
-                
+
                 <div id="loading" style="display: none;">
                     <div class="loader"></div> <!-- Loader -->
                     <p>Enviando...</p>
                 </div>
-                
-                <div id="success-message" style="display: none;">Seu contato foi enviado com sucesso! Em breve responderei.</div>
+
+                <div id="success-message" style="display: none;">Seu contato foi enviado com sucesso! Em breve
+                    responderei.</div>
             </div>
         </section>
 
     </main>
 
-                <!-- ============================================ RODAPÉ ============================================ -->
+    <!-- ============================================ RODAPÉ ============================================ -->
 
     <footer>
         <div class="interface">
             <div class="line-footer">
                 <div class="flex">
                     <div class="logo">
-                        <a href="#" class="logo-text">LS - Leonardo Santos</a>
+                        <a href="#" class="logo-text"> Leonardo Cassiano </a>
                     </div>
                     <div class="btn-social">
-                        <a href="https://www.instagram.com/p1csleo99/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                        <a href="https://www.youtube.com/@Leonardo_Dev" target="_blank"><button><i class="bi bi-youtube"></i></button></a>
-                        <a href="https://www.linkedin.com/in/leonardo-cassiano-435b62257/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                        <a href="https://github.com/yLeonardo99" target="_blank"><button><i class="bi bi-github"></i></button></a>
-                        <a href="https://bio.site/Leonardo.Dev" target="_blank"><button><i class="bi bi-link-45deg"></i></button></a> 
+                        <a href="https://www.instagram.com/p1csleo99/" target="_blank"><button><i
+                                    class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.youtube.com/@Leonardo_Dev" target="_blank"><button><i
+                                    class="bi bi-youtube"></i></button></a>
+                        <a href="https://www.linkedin.com/in/leonardo-cassiano-435b62257/" target="_blank"><button><i
+                                    class="bi bi-linkedin"></i></button></a>
+                        <a href="https://github.com/yLeonardo99" target="_blank"><button><i
+                                    class="bi bi-github"></i></button></a>
+                        <a href="https://bio.site/Leonardo.Dev" target="_blank"><button><i
+                                    class="bi bi-link-45deg"></i></button></a>
                     </div>
                 </div>
             </div>
-    
+
             <div class="line-footer borda">
                 <p><i class="bi bi-envelope-fill"></i> <a href="mailto:leo205283@gmail.com">leo205283@gmail.com</a></p>
             </div>
-            
+
             <div class="line-footer">
                 <p>&copy; 2024 Leonardo Cassiano. Todos os direitos reservados.</p>
             </div>
@@ -221,4 +284,5 @@
     </footer>
 
 </body>
+
 </html>
