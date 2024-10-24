@@ -181,6 +181,7 @@ header nav.menu-desktop ul li {
 }
 
 /* ESTILO DO TOPO DO SITE */
+
 section.topo-do-site {
     padding: 40px 4%;
 }
@@ -224,38 +225,68 @@ section.topo-do-site .flex {
 
 /* ESTILO DAS ESPECIALIDADES */
 
-section.especiliadades {
+section.especialidades {
     padding: 40px 4%;
 }
 
-section.especiliadades .flex {
+section.especialidades .flex {
     gap: 60px;
 }
 
-.especiliadades .especialidades-box {
+.especialidades .especialidades-box {
     color: #fff;
     padding: 40px;
     border-radius: 20px;
     margin-top: 45px;
-    transition: .2s;
+    transition: transform .2s;
+    position: relative;
+    overflow: hidden; 
+    border: 5px solid transparent; 
+    background: transparent;
 }
 
-.especiliadades .especialidades-box:hover {
+/* Animação da borda */
+@keyframes borderAnimation {
+    0% {
+        border-color: #00FF08;
+    }
+    25% {
+        border-color: #02b6ad;
+    }
+    50% {
+        border-color: #FF00FF;
+    }
+    75% {
+        border-color: #FF8C00;
+    }
+    100% {
+        border-color: #00FF08;
+    }
+}
+
+/* Aplica a animação constantemente */
+
+.especialidades .especialidades-box {
+    animation: borderAnimation 5s linear infinite; /* Aplica a animação de forma contínua */
+}
+
+.especialidades .especialidades-box:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px #ffffff78;
+    box-shadow: 0 0 20px #02b6ad;
 }
 
-.especiliadades .especialidades-box i {
+.especialidades .especialidades-box i {
     font-size: 70px;
     color: #00FF08;
 }
 
-.especiliadades .especialidades-box h3 {
+.especialidades .especialidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
 }
 
 /* ESTILO DO SOBRE */
+
 section.sobre {
     padding: 80px 4%;
 }
@@ -301,7 +332,7 @@ section.sobre .flex {
 
 section.portfolio {
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
+    box-shadow: 0 0 40px 10px #262727;
 }
 
 section.portfolio .flex {
@@ -346,7 +377,7 @@ section.portfolio .flex {
     opacity: 1;
 }
 
-/* ESTILO DO FORMULÁRIO DE CONTATO */
+/* ESTILO DO FORMULÁRIO CONTATO*/
 
 section.formulario {
     padding: 80px 4%;
@@ -366,7 +397,7 @@ form input,
 form textarea {
     width: 100%;
     background-color: #242424;
-    border: 0;
+    border: 0; 
     outline: 0;
     padding: 20px 15px;
     border-radius: 15px;
@@ -374,33 +405,34 @@ form textarea {
     font-size: 18px;
 }
 
-form textarea {
-    resize: none;
-    max-height: 200px;
-}
-
-form .btn-enviar {
-    margin-top: 20px;
-    text-align: center;
-}
-
-form .btn-enviar input {
-    width: 120px;
-    background-color: #00FF08;
-    color: #000;
-    font-weight: 700;
-    cursor: pointer;
-    transition: .2s;
+/* Animação da borda do formulário */
+@keyframes borderAnimation {
+    0% {
+        border-color: #00FF08;
+    }
+    25% {
+        border-color: #02b6ad;
+    }
+    50% {
+        border-color: #FF00FF;
+    }
+    75% {
+        border-color: #FF8C00;
+    }
+    100% {
+        border-color: #00FF08;
+    }
 }
 
 .formulario {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #303030;
+    border: 5px solid transparent; 
     border-radius: 8px;
     background-color: #000000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: borderAnimation 5s linear infinite; 
 }
 
 .titulo {
@@ -416,16 +448,16 @@ textarea {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 2px solid #303030; /* Cor padrão da borda */
     border-radius: 4px;
     transition: border-color 0.3s ease;
 }
 
+/* Foco nos campos de entrada */
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border-color: #d62976;
-    /* Cor da borda ao focar */
+    border-color: #d62976; /* Cor da borda ao focar */
     outline: none;
 }
 
@@ -726,7 +758,7 @@ footer .line-footer p a {
 }
 
 
-/*  IMAGENS DO NOTEBOOK E LINGUAGEM*/
+/*  -------- IMAGENS DO NOTEBOOK E LINGUAGEM ----------*/
 
 .img-topo-site {
     position: relative;
