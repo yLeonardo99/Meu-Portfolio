@@ -48,7 +48,7 @@ form .btn-enviar input:hover {
     transform: scale(1.05);
 }
 
-/* ESTILO DO DESENVOLVEDOR FULL-STACK & LEONARDO CASSIANO (SOBRE)  */
+/* ESTILO DO DESENVOLVEDOR FULL-STACK  */
 
 .cursor {
     display: inline-block;
@@ -68,7 +68,7 @@ form .btn-enviar input:hover {
 .cursor {
     display: inline-block;
     background-color: transparent;
-    margin-left: 2px;
+    margin-left:2px;
     animation: blink 0.7s step-end infinite;
 }
 
@@ -240,8 +240,8 @@ section.especialidades .flex {
     margin-top: 45px;
     transition: transform .2s;
     position: relative;
-    overflow: hidden; 
-    border: 5px solid transparent; 
+    overflow: hidden;
+    border: 5px solid transparent;
     background: transparent;
 }
 
@@ -250,15 +250,19 @@ section.especialidades .flex {
     0% {
         border-color: #00FF08;
     }
+
     25% {
         border-color: #02b6ad;
     }
+
     50% {
         border-color: #FF00FF;
     }
+
     75% {
         border-color: #FF8C00;
     }
+
     100% {
         border-color: #00FF08;
     }
@@ -267,7 +271,8 @@ section.especialidades .flex {
 /* Aplica a animação constantemente */
 
 .especialidades .especialidades-box {
-    animation: borderAnimation 5s linear infinite; /* Aplica a animação de forma contínua */
+    animation: borderAnimation 5s linear infinite;
+    /* Aplica a animação de forma contínua */
 }
 
 .especialidades .especialidades-box:hover {
@@ -377,7 +382,8 @@ section.portfolio .flex {
     opacity: 1;
 }
 
-/* ESTILO DO FORMULÁRIO CONTATO*/
+/* =============================================== Estilo do formulário contato ==========================================================*/
+
 
 section.formulario {
     padding: 80px 4%;
@@ -397,31 +403,24 @@ form input,
 form textarea {
     width: 100%;
     background-color: #242424;
-    border: 0; 
+    border: 5px solid transparent; 
     outline: 0;
     padding: 20px 15px;
     border-radius: 15px;
     color: #fff;
     font-size: 18px;
+    position: relative; 
+    animation: borderAnimation 5s linear infinite; 
 }
 
 /* Animação da borda do formulário */
+
 @keyframes borderAnimation {
-    0% {
-        border-color: #00FF08;
-    }
-    25% {
-        border-color: #02b6ad;
-    }
-    50% {
-        border-color: #FF00FF;
-    }
-    75% {
-        border-color: #FF8C00;
-    }
-    100% {
-        border-color: #00FF08;
-    }
+    0% { border-color: #00FF08; }
+    25% { border-color: #02b6ad; }
+    50% { border-color: #FF00FF; }
+    75% { border-color: #FF8C00; }
+    100% { border-color: #00FF08; }
 }
 
 .formulario {
@@ -448,17 +447,22 @@ textarea {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-    border: 2px solid #303030; /* Cor padrão da borda */
+    border: 2px solid #303030; 
     border-radius: 4px;
     transition: border-color 0.3s ease;
 }
 
-/* Foco nos campos de entrada */
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border-color: #d62976; /* Cor da borda ao focar */
+    border-color: transparent; 
     outline: none;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    animation: borderAnimation 5s linear infinite; 
 }
 
 textarea {
@@ -471,59 +475,64 @@ textarea {
     margin-top: 20px;
 }
 
-.btn-enviar input[type="submit"] {
-    background-color: #d62976;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 4px;
+.button {
+    width: 100%; 
+    height: 40px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 15px;
+    background-color: #241f1f; 
+    border-radius: 10px;
+    border: 2px solid transparent; 
+    color: rgb(255, 253, 253);
+    position: relative;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-weight: 900;
+    overflow: hidden; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
-.btn-enviar input[type="submit"]:hover {
-    background-color: #c52066;
+/* Efeito de contorno para o botão */
+
+.button:before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite; 
 }
 
-#loading,
-#success-message {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 16px;
-    color: #333;
+.button {
+    border: 5px solid transparent; 
+    animation: borderAnimation 5s linear infinite; 
 }
 
-/* LOADING*/
-
-.loader {
-    border: 8px solid #f3f3f3;
-    /* Cor do fundo */
-    border-top: 8px solid #3498db;
-    /* Cor da parte giratória */
-    border-radius: 50%;
-    width: 40px;
-    /* Tamanho do loader */
-    height: 40px;
-    /* Tamanho do loader */
-    animation: spin 1s linear infinite;
-    /* Animação de rotação */
-    margin: 0 auto;
-    /* Centraliza o loader */
+@keyframes steam {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
 
-/* Animação de rotação */
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
+.button:hover {
+    background-color: white; 
+    color: black; 
+    border-color: transparent; 
+}
 
-    100% {
-        transform: rotate(360deg);
-    }
+.button:hover:before {
+    background: transparent; 
 }
 
 
-/* ESTILO DO RODAPÉ */
+/* =================================================== ESTILO DO RODAPÉ =====================================================================*/
 
 footer {
     padding: 40px 4%;
@@ -663,57 +672,84 @@ footer .line-footer p a {
     margin-top: 10px;
 }
 
-/* SOBRE MIM */
+/* SOBRE MIM (Redes social) */
 
-.btn-social button {
-    background-color: rgb(214, 214, 214);
-    border: 2px solid transparent;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    padding: 10px;
-    position: relative;
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
 }
 
-.btn-social button i {
-    color: black;
-    /* Cor padrão dos ícones */
-    transition: color 0.3s ease;
+/* Estilos gerais para todos os ícones */
+
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.btn-social button:hover {
-    border-color: transparent;
+.socialContainer:active {
+    transform: scale(0.9);
 }
 
-.btn-social button:hover i {
-    color: currentColor;
-    /* Muda a cor do ícone para a cor atual do botão */
+.socialSvg {
+    width: 17px;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
-.btn-social a:nth-child(1) button:hover i {
-    color: #C13584;
-    /* Cor do Instagram */
+.socialSvg path {
+    fill: rgb(255, 255, 255);
 }
 
-.btn-social a:nth-child(2) button:hover i {
-    color: #FF0000;
-    /* Cor do YouTube */
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
 }
 
-.btn-social a:nth-child(3) button:hover i {
-    color: #0A66C2;
-    /* Cor do LinkedIn */
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
-.btn-social a:nth-child(4) button:hover i {
-    color: #333;
-    /* Cor do GitHub */
+/* Cores para cada ícone no hover */
+
+.containerOne:hover {
+    background-color: #d62976;
+    /* Instagram */
 }
 
-.btn-social a:nth-child(5) button:hover i {
-    color: #031881;
-    /* Cor do link externO*/
+.containerGitHub:hover {
+    background-color: #A020F0;
+    /* GitHub */
 }
+
+.containerThree:hover {
+    background-color: #0072b1;
+    /* LinkedIn */
+}
+
+.containerFour:hover {
+    background-color: #128c7e;
+    /* lINK Externo */
+}
+
 
 /* lOGO  Superior / Inferior */
 

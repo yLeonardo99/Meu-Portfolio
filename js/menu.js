@@ -78,25 +78,25 @@ digitar();
 
 // LEONARDO CASSIANO
 
-const nome2 = "LEONARDO CASSIANO";
-let j = 0;
-let apagando2 = false;
-const elementoNome2 = document.getElementById("nome2");
+// const nome2 = "LEONARDO CASSIANO ";
+// let j = 0;
+// let apagando2 = false;
+// const elementoNome2 = document.getElementById("nome2");
 
-function digitarNome2() {
-    if (!apagando2 && j < nome2.length) {
-        elementoNome2.textContent += nome2.charAt(j);
-        j++;
-        setTimeout(digitarNome2, 150);
-    } else if (apagando2 && j > 0) {
-        elementoNome2.textContent = nome2.substring(0, j - 1);
-        j--;
-        setTimeout(digitarNome2, 100);
-    } else {
-        apagando2 = !apagando2;
-        setTimeout(digitarNome2, 1000);
-    }
-}
+// function digitarNome2() {
+//     if (!apagando2 && j < nome2.length) {
+//         elementoNome2.textContent += nome2.charAt(j);
+//         j++;
+//         setTimeout(digitarNome2, 150);
+//     } else if (apagando2 && j > 0) {
+//         elementoNome2.textContent = nome2.substring(0, j - 1);
+//         j--;
+//         setTimeout(digitarNome2, 100);
+//     } else {
+//         apagando2 = !apagando2;
+//         setTimeout(digitarNome2, 1000);
+//     }
+// }
 
-digitarNome2();
+// digitarNome2();
 
