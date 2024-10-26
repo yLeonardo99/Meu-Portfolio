@@ -333,9 +333,11 @@ section.sobre .flex {
     transition: .2s;
 }
 
-/* ESTILO DO PORTFÓLIO */
+/*  =============================================== ESTILO DO PORTFÓLIO  ====================================================*/
 
-section.portfolio {
+/* Estilo  com  Rolagem (Quando aproximar do card tem efeito de rolagem da imagem */
+
+/* section.portfolio {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #262727;
 }
@@ -380,7 +382,89 @@ section.portfolio .flex {
 
 .overlay:hover {
     opacity: 1;
+} */
+
+/* Estilo sem Rolagem  */
+
+section.portfolio {
+    padding: 80px 4%;
+    background-color: #000; 
+    box-shadow: 0 0 40px 10px rgba(38, 39, 39, 0.8); 
 }
+
+section.portfolio .interface {
+    max-width: 1200px; 
+    margin: 0 auto; /
+}
+
+section.portfolio .flex {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    margin-top: 60px;
+    gap: 20px;
+}
+
+.img-port {
+    flex: 1 1 200px; 
+    height: 300px; 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 20px; 
+    position: relative;
+    overflow: hidden; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease; 
+}
+
+.img-port:hover {
+    transform: scale(1.05); 
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); 
+    border-radius: 20px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    font-size: 18px; 
+    font-weight: 600;
+    color: #fff;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    padding: 20px; 
+}
+
+.img-port:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    margin: 0; 
+}
+
+.overlay p {
+    margin: 5px 0 10px; 
+    text-align: center; 
+}
+
+.icon-github {
+    font-size: 24px;
+    color: #fff; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+.icon-github:hover {
+    color: #f0db4f; 
+}
+
+
 
 /* =============================================== Estilo do formulário contato ==========================================================*/
 
@@ -533,32 +617,41 @@ textarea {
 
 
 /* =================================================== ESTILO DO RODAPÉ =====================================================================*/
-
 footer {
-    padding: 40px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
+    background-color: #282c34; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
 }
 
-footer .flex {
-    justify-content: space-between;
+.flex {
+    display: flex;
+    justify-content: space-between; /* Alinha os elementos em cada extremidade */
+    align-items: center; /* Centraliza verticalmente */
 }
 
-footer .line-footer {
-    padding: 20px 0;
+.line-footer {
+    flex-grow: 1; /* Permite que essa div cresça e ocupe o espaço disponível */
+    text-align: left;
+    left: 50%; /* Alinha o texto à esquerda */
 }
 
-.borda {
-    border-top: 2px solid #00FF08;
+.social-container {
+    display: flex;
+    gap: 15px; 
+    margin-right: 10%; /* Move os ícones um pouco para a esquerda */
 }
 
-footer .line-footer p i {
-    color: #00FF08;
-    font-size: 22px;
+.dancing-script-ls {
+    font-family: "Dancing Script", serif;
+    font-weight: 700; /* Peso da fonte para o ícone */
+    font-size: 24px; /* Tamanho da fonte */
 }
 
-footer .line-footer p a {
-    color: #fff;
+.footer-text {
+    font-size: 14px; /* Tamanho da fonte para direitos reservados */
+    margin-top: 5px; /* Espaçamento acima */
 }
+
 
 @media screen and (max-width: 1020px) {
 
@@ -652,7 +745,7 @@ footer .line-footer p a {
     }
 }
 
-/* ------------- E-mail centralizado ----------- */
+/* ------------- E-mail centralizado -----------
 
 .interface {
     text-align: center;
@@ -670,7 +763,7 @@ footer .line-footer p a {
 
 .btn-social {
     margin-top: 10px;
-}
+} */
 
 /* SOBRE MIM (Redes social) */
 
