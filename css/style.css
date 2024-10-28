@@ -617,153 +617,45 @@ textarea {
 
 
 /* =================================================== ESTILO DO RODAPÉ =====================================================================*/
+
 footer {
-    background-color: #282c34; /* Cor de fundo do rodapé */
-    color: white; /* Cor do texto */
-    padding: 20px; /* Espaçamento interno */
+    background-color: #17052c; 
+    color: white; 
+    padding: 20px; 
 }
 
 .flex {
     display: flex;
-    justify-content: space-between; /* Alinha os elementos em cada extremidade */
-    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .line-footer {
-    flex-grow: 1; /* Permite que essa div cresça e ocupe o espaço disponível */
-    text-align: left;
-    left: 50%; /* Alinha o texto à esquerda */
+    flex-grow: 1; 
+    text-align: center;
+    padding-left: 22%; /*Texto "Todos os direitos reservados"*/
 }
+
 
 .social-container {
     display: flex;
     gap: 15px; 
-    margin-right: 10%; /* Move os ícones um pouco para a esquerda */
+    margin-right: 10%; 
 }
 
 .dancing-script-ls {
     font-family: "Dancing Script", serif;
-    font-weight: 700; /* Peso da fonte para o ícone */
-    font-size: 24px; /* Tamanho da fonte */
+    font-weight: 700;
+    font-size: 35px;
+    color: #ffffff; 
+    margin: 0; 
 }
 
 .footer-text {
-    font-size: 14px; /* Tamanho da fonte para direitos reservados */
-    margin-top: 5px; /* Espaçamento acima */
+    font-size: 14px; 
+    margin-top: 5px; 
 }
 
-
-@media screen and (max-width: 1020px) {
-
-    /* CLASSES GERAIS */
-    .flex {
-        flex-direction: column;
-    }
-
-    .topo-do-site .flex {
-        flex-direction: column-reverse;
-    }
-
-    h2.titulo {
-        font-size: 34px;
-        line-height: 30px;
-    }
-
-    /* CABEÇALHO */
-    .menu-desktop,
-    .btn-contato {
-        display: none;
-    }
-
-    /* TOPO DO SITE */
-
-    section.topo-do-site .flex {
-        gap: 40px;
-    }
-
-    section.topo-do-site {
-        padding: 20px 8%;
-    }
-
-    .topo-do-site h1 {
-        font-size: 30px;
-    }
-
-    .topo-do-site .img-topo-site img {
-        width: 100%;
-    }
-
-    /* ESPECIALIDADES */
-    section.especiliadades {
-        padding: 40px 8%;
-    }
-
-    /* SOBRE */
-    section.sobre {
-        padding: 80px 8%;
-    }
-
-    .sobre .txt-sobre h2 {
-        font-size: 34px;
-        line-height: 35px;
-        text-align: center;
-    }
-
-    .btn-social {
-        text-align: center;
-    }
-
-    .img-sobre img {
-        width: 100%;
-    }
-
-    /* PORTFÓLIO */
-
-    section.portfolio {
-        padding: 80px 8%;
-    }
-
-    .img-port {
-        width: 100%;
-        max-width: 360px;
-        margin: 0 auto;
-    }
-
-    section.portfolio .flex {
-        gap: 60px;
-    }
-
-    /* RODAPÉ */
-
-    footer .flex {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    footer .line-footer {
-        text-align: center;
-    }
-}
-
-/* ------------- E-mail centralizado -----------
-
-.interface {
-    text-align: center;
-}
-
-.line-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.email-text {
-    margin: 10px 0;
-}
-
-.btn-social {
-    margin-top: 10px;
-} */
 
 /* SOBRE MIM (Redes social) */
 
@@ -1140,4 +1032,96 @@ p i {
 
 .menu-mobile.abrir-menu~.overlay-menu {
     display: block;/
+}
+
+@media screen and (max-width: 1020px) {
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /* ESPECIALIDADES */
+    section.especiliadades {
+        padding: 40px 8%;
+    }
+
+    /* SOBRE */
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    .img-sobre img {
+        width: 100%;
+    }
+
+    /* PORTFÓLIO */
+
+    section.portfolio {
+        padding: 80px 8%;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex {
+        gap: 60px;
+    }
+
+    /* RODAPÉ */
+
+    footer .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
 }
