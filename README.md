@@ -31,7 +31,7 @@ Sou apaixonado por programação, design e tecnologia. Estou sempre buscando apr
 
 Aqui estão algumas capas do meu portfólio:
 
-[<img src="Images/Capa1.png" alt="Capa 1" width="300" />](https://raw.githubusercontent.com/yLeonardo99/Meu-Portfolio/refs/heads/main/images/Capa1.png)
+[[<img src="Images/Capa1.png" alt="Capa 1" width="300" />](https://raw.githubusercontent.com/yLeonardo99/Meu-Portfolio/refs/heads/main/images/Capa1.png)](https://github.com/yLeonardo99/Meu-Portfolio/blob/main/images/Capa1.png)
 [<img src="Images/Capa2.png" alt="Capa 2" width="300" />](https://raw.githubusercontent.com/yLeonardo99/Meu-Portfolio/refs/heads/main/images/Capa2.png)
 [<img src="Images/Capa3.png" alt="Capa 3" width="300" />](https://raw.githubusercontent.com/yLeonardo99/Meu-Portfolio/refs/heads/main/images/Capa3.png)
 
