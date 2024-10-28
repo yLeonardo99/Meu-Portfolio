@@ -27,4 +27,12 @@ Sou apaixonado por programação, design e tecnologia. Estou sempre buscando apr
 
 ---
 
+## 📸 Minhas Capas
 
+Aqui estão algumas capas do meu portfólio:
+
+<img src="Images/Capa1.png" alt="Capa 1" width="300" />
+<img src="Images/Capa2.png" alt="Capa 2" width="300" />
+<img src="Images/Capa3.png" alt="Capa 3" width="300" />
+
+---
